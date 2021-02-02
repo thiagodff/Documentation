@@ -5,6 +5,11 @@ class UserController {
     try {
       const users = await User.findAll();
 
+      /**
+        #swagger.responses[200] = {
+         description: "lista de usuários"
+        }
+       */
       return res.json(users);
     } catch (err) {
       return res.status(400).json({ error: err.message });
@@ -49,7 +54,7 @@ class UserController {
 
       await user.destroy();
 
-      return res.json();
+      return res.json(); // #swagger.responses[200]
     } catch (err) {
       return res.status(400).json({ error: err.message });
     }

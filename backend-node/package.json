@@ -11,7 +11,9 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.0"
+    "eslint-plugin-import": "^2.18.0",
+    "swagger-autogen": "^2.5.9",
+    "swagger-ui-express": "^4.1.6"
   },
   "scripts": {
     "start": "node src/index.js"

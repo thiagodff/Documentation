@@ -34,7 +34,7 @@ Client REST:
 
 Swagger (uma das ferramentas mais completas para documentação de api): fazer a documentação mais profunda da API, falando quais são os parâmetros, se é obrigatório ou não, quais tipos é aceito, quais são os retornos, status de retorno, se faz redirecionamento, etc.
 
-Podemos documentar com o Swagger de duas maneiras
+Objetivo: Documentar os endpoints da API. Podemos documentar com o swagger de duas maneiras
 
 - Middleware (utilizando um yaml para definir as rotas)
 - Documentar separadamente
