@@ -40,3 +40,12 @@ Objetivo: Documentar os endpoints da API. Podemos documentar com o swagger de du
 - Documentar separadamente
 
 O GraphQL já vem com uma documentação integrada muito boa, então não precisa utilizar o swagger
+
+## Frontend
+
+Documentar componentes e telas. Acaba se tornando uma necessidade ainda maior caso estejamos utilizando um design system.
+
+Ferramentas mais famosas
+
+- Story Book
+- Docz (Menção honrosa, feita por um brasileiro, não é tão famosa quanto o Story Book)
