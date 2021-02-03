@@ -1,38 +1,22 @@
-import React from 'react';
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0';
+import Button, { Props } from "../components/Button";
+import { Story } from "@storybook/react/types-6-0";
 
-import { Button, ButtonProps } from './Button';
+const Template: Story<Props> = (args) => <Button {...args} />;
 
-export default {
-  title: 'Example/Button',
-  component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-} as Meta;
-
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
-
-export const Primary = Template.bind({});
+export const Primary = Template.bind({}); // precisar dar o .bind para o template não receber as propriedades do outro
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  children: "Teste",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const Disabled = Template.bind({});
+Disabled.args = {
+  children: "Teste",
+  disabled: true,
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
+const ButtonStory = {
+  title: "Components/Button", // NomeDaCategoria/NomeDaStory
+  component: Button,
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-};
+export default ButtonStory;
